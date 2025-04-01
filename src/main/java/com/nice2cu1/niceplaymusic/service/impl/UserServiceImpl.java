@@ -1,6 +1,6 @@
 package com.nice2cu1.niceplaymusic.service.impl;
 
-import com.nice2cu1.niceplaymusic.dao.UserDao;
+import com.nice2cu1.niceplaymusic.mapper.UserMapper;
 import com.nice2cu1.niceplaymusic.pojo.User;
 import com.nice2cu1.niceplaymusic.service.UserService;
 import jakarta.annotation.Resource;
@@ -17,7 +17,7 @@ import java.util.Map;
 public class UserServiceImpl implements UserService {
 
     @Resource
-    private UserDao userDao;
+    private UserMapper userDao;
 
     @Override
     public User login(String identifier, String password) {
